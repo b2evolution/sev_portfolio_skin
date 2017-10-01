@@ -1,0 +1,440 @@
+/* Designed by François PLANQUE - http://fplanque.net/ */
+
+@import url("../../rsc/css/basic.css");	/* Import basic styles */
+@import url("../../rsc/css/blog_base.css");	/* Default styles for the blog navigation */
+@import url("../../rsc/css/item_base.css");	/* Default styles for the post CONTENT */
+
+body {
+	padding: 0;
+	margin: 0;
+	color: #666;
+	background: #98A7AA url(img/background.jpg) repeat;
+}
+
+div#skin_wrapper {
+	font: 75% Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: #222;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+
+h2 {
+	font-size: 150%;
+	margin: 12px 0 0 0;
+}
+h3 {
+	color: #657f9a;
+	font-size: 125%;
+	font-weight:normal;
+}
+h4 {
+	color: #222;
+	font-size: 110%;
+}
+
+div#bgradient {
+	padding: 8px 0;
+	background: url(img/bgradrient.jpg) repeat-x;
+}
+
+div#wrapper {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+div#wrapper2 {
+}
+
+div.pageHeader {
+	height: 58px;
+	margin: 0;
+	background: url(img/top_shadow.jpg) no-repeat bottom;
+}
+
+div.pageFooter {
+	clear: both;
+	margin: 0;
+	padding: 10px 8px 0;
+	background: url(img/bottom_shadow2.jpg) no-repeat;
+}
+
+/*
+ * Header / bloglist on top:
+ */
+div.pageHeader ul {
+	float:right;
+	margin: 29px 41px 0 0;
+	padding: 0;
+	list-style-type:none;
+	padding: 0;
+}
+div.pageHeader li {
+	display: inline;
+	padding: 0 0 0 3.8ex;
+}
+div.pageHeader li a {
+	font-weight: bold;
+	font-size: 14px;
+	color: #222;
+}
+div.pageHeader li a:hover {
+	text-decoration: none;
+	color: #ff0084;
+}
+div.pageHeader li a.selected {
+	color: #ff0084;
+}
+
+div.Header_container {
+	margin: 0 42px;
+}
+
+div.pageHeader div.widget_core_coll_logo h1 {
+	padding: 0;
+}
+
+div.pageHeader div.widget_core_coll_title h1 {
+	margin: 0;
+	padding: 3px 0 0 0;
+	line-height: 32px;
+	font-size: 28px;
+	letter-spacing: -1px;
+}
+div.pageHeader div.widget_core_coll_title h1 a {
+	color: #222;
+	font-size: 96%;
+	text-decoration: none;
+}
+div.pageHeader div.widget_core_coll_title h1 a:hover {
+	color: #ff0084;
+	font-size: 96%;
+}
+div.pageHeader div.widget_core_coll_tagline {
+	color: #888;
+	font-size: 11px;
+	letter-spacing: 1px;
+	top: -1px;
+	padding: 0 0 0 2px;
+}
+
+div.pageMain {
+	background: url(img/center_shadow.jpg) repeat-y bottom;
+}
+div.left_shadow_gradient {
+	background: url(img/left_shadow_gradient.jpg) no-repeat left top;
+}
+div.right_shadow_gradient {
+	background: url(img/right_shadow_gradient.jpg) no-repeat right top;
+	padding: 0 16px;
+}
+
+div.page_main_area {
+	background-color: #fff;
+}
+
+p.baseline {
+	text-align: center;
+	font-size: 76%;
+	color: #666;
+	padding: 1ex;
+	margin: 0;
+}
+p.baseline a,
+p.baseline a {
+	color: #666;
+	text-decoration: none;
+}
+p.baseline a:hover {
+	text-decoration: underline;
+}
+
+div.action_messages {
+	margin: 0;
+}
+
+.nav_right
+{
+	float: right;
+}
+.nav_right span {
+	font-size: 100%;
+	top: 2px;
+	position: relative;
+}
+
+/* Styles for posts */
+.main_wide {
+	overflow: hidden;
+	margin: 0 28px;
+	padding: 59px 0 0 0;
+}
+
+.bPosts {
+	float: left;
+	width: 648px;
+	overflow: hidden;
+	margin: 19px 0 0 41px;
+	padding: 0;
+}
+.bPost, .bPostpublished
+{
+	clear: both;
+	margin: 0 0 4ex;
+	padding: 0;
+	/*background-color:#00FF33; */
+}
+
+.image_block {
+	margin-bottom: 1ex;
+}
+td.image {
+	width: 648px;
+	height: 488px;
+	vertical-align: middle;
+}
+.shadow_b {
+	margin: auto;
+}
+.image_block img {
+	border: 1px solid #cecece;
+}
+
+.bDetails {
+	clear: both;
+}
+.bTitle {
+	font-size: 125%;
+	margin: 0;
+}
+.bText {
+	margin: 0;
+
+
+}
+.bSmallPrint
+{
+	font-size: 84%;
+}
+.action_right
+{
+	font-size: 84%;
+	float: right;
+	margin: 0 8px;
+}
+
+div.bComment {
+	border: 1px solid #657f9a;
+	background-color:	#EBF7FD;
+	margin: 1ex 0 2ex 5ex;
+}
+div.moderation_msg {
+	margin: 1ex 0 2ex 5ex;
+}
+
+
+form.bComment {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+input.bComment,
+textarea.bComment
+{
+	background-color: #fff;
+	border: 1px solid #657f9a;
+	width: 97%;
+	padding: 2px;
+	margin: 0ex;
+}
+select.bComment  /* Used by the profile form */
+{
+	background-color: #fff;
+	border: 1px solid #657f9a;
+	padding: 1px;
+	margin: 0ex;
+}
+
+
+/* Styles for sidebar (right) */
+.bSideBar {
+	/* background-color: #fcc; */
+	margin: 0 18px 0 0;
+	padding: 18px 0 0 0;
+	width: 133px;
+	float: right;
+	overflow: hidden;
+}
+
+.bSideItem {
+	margin: 0 0 2ex 0;
+	padding: 0;
+}
+
+.bFootItem {
+	margin: 16px 8px;
+	padding: 0;
+}
+
+.bFootItem {
+	float: left;
+}
+
+.bSideItem h3,
+.bFootItem h3 {
+	margin: 0;
+	padding: 0;
+}
+.bSideItem ul {
+	font-size: 92%;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.bSideItem ul ul {
+	font-size: 90%;
+	margin-left: 8px;
+	padding-left: 2px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.bFootItem ul {
+	font-size: 92%;
+	margin-left: 8px;
+	padding-left: 8px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.bFootItem ul ul {
+	font-size: 100%;
+	margin-left: 8px;
+	padding-left: 8px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.bSideItem li {
+	margin: 4px 0;
+	padding: 2px 1ex;
+	list-style: none;
+	font-weight: bold;
+}
+.bSideItem li.selected {
+	color: #ff0084;
+}
+
+.bSideItem li.selected li,
+.bSideItem li li.selected,
+.bSideItem li li {
+	margin: 0;
+	padding: 0;
+	font-weight:normal;
+}
+
+.bSideItem li a {
+	font-size: 120%;
+	color: #222;
+}
+.bSideItem li a:hover  {
+	font-size: 120%;
+	color: #ff0084;
+	text-decoration:none;
+}
+.bSideItem li li a {
+	color: #222;
+}
+
+.bSideItem li.selected a {
+	color: #FF3366;
+}
+
+form.search
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin: 1ex 0;
+}
+input.SearchField
+{
+	background-color: #fff;
+	border: 1px solid #657f9a;
+	padding: 2px;
+	width: 120px;
+	height: 16px;
+	margin: 0ex;
+}
+
+/* Calendar: */
+table.bCalendarTable {
+	width: 100%;
+	border: 1px solid #999;
+}
+table.bCalendarTable caption {
+	text-transform:uppercase;
+	border-bottom: 0;
+	border: 1px solid #999;
+	border-bottom: 0;
+}
+th.bCalendarHeaderCell {
+	text-transform:uppercase;
+	color: #999;
+}
+table.bCalendarTable tfoot a {
+	text-decoration: none;
+}
+table.bCalendarTable tfoot a:hover {
+	background-color: #26aae8;
+	color: #fff;
+}
+#bCalendarToday {
+	background-color: #26aae8;
+	color: #fff;
+}
+#bCalendarToday a {
+	color: #fff;
+}
+
+ul.main_nav_links {
+	margin-top: 3ex;
+	margin-bottom: 3ex
+}
+ul.main_nav_links li {
+	margin-top: .5ex;
+	margin-bottom: .5ex;
+}
+/* Curriculum: */
+titrecurriculum  {
+	color: #ff0084;
+	font-size: 190%;
+}
+
+h4 {
+	color: #222;
+	font-size: 110%;
+}
+
+img.arrow_next {
+	background: url(img/next.gif) no-repeat 6px 10px;
+}
+img.arrow_next:hover {
+	background: url(img/next_pink.gif) no-repeat 6px 10px;
+}
+
+img.arrow_prev {
+	background: url(img/prev.gif) no-repeat 6px 10px;
+}
+img.arrow_prev:hover {
+	background: url(img/prev_pink.gif) no-repeat 6px 10px;
+}
+
+div.input span.notes {
+	display:none;
+}
